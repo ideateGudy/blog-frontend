@@ -110,7 +110,7 @@ const Comments = ({ postId }) => {
           ))}
         </>
       )}
-      {data?.length === 0 && (
+      {data?.length === 0 && isSignedIn && (
         <div className="text-gray-500">
           No comments yet. Be the first to comment!
         </div>

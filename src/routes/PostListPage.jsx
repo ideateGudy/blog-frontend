@@ -29,10 +29,10 @@ const PostListPage = () => {
         {open ? "Close" : "Filter or Search"}
       </button>
       <div className="flex flex-col-reverse md:flex-row gap-8">
-        <div className="w-9/12">
+        <div className="md:w-9/12">
           <PostList />
         </div>
-        <div className={`${open ? "block" : "hidden"} md:block w-3/10`}>
+        <div className={`${open ? "block" : "hidden"} md:block md:w-3/10`}>
           <SideMenu />
         </div>
       </div>
