@@ -46,12 +46,18 @@ const SinglePostPage = () => {
           <div className="flex items-center gap-2 text-gray-400 text-sm">
             <span>Written by </span>
             {data.user?.username && (
-              <Link to="/test" className="text-blue-800">
+              <Link
+                to={`/posts?author=${data.user?.username}`}
+                className="text-blue-800"
+              >
                 {data.user.username}
               </Link>
             )}
             <span> on </span>
-            <Link to="/test" className="text-blue-800">
+            <Link
+              to={`/posts?category=${data.category}`}
+              className="text-blue-800"
+            >
               {data.category}
             </Link>
             <span className="text-gray-500"> {format(data.createdAt)}</span>
@@ -88,7 +94,7 @@ const SinglePostPage = () => {
                   alt="Author"
                 />
                 <Link
-                  to="/test"
+                  to={`/posts?author=${data.user?.username}`}
                   className="text-blue-800 font-semibold text-lg block mt-2"
                 >
                   {data.user.username}
