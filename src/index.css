@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+body {
+  background-color: #e6e6ff;
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+  width: 0; /* Firefox */
+}
+
+.animatedButton {
+  animation-duration: 10000ms;
+}
+
+.ql-toolbar,
+.ql-container,
+.ql-editor {
+  border: none !important;
+}
